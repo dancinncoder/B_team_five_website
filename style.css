@@ -71,3 +71,23 @@ font-family: 'Orbit', sans-serif;
 .information {
   margin-right: 50px;
 }
+
+
+
+
+
+
+
+
+.form-contro {
+  width: 50%;
+}
+
+.commentbox
+{
+width: 50%;
+margin: 20px auto 20px auto;
+border: solid 1px black;
+padding: 20px;
+border-radius: 5px;
+}
