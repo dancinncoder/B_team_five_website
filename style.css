@@ -4,3 +4,70 @@ html, body {
 }
 
 /* asset 에 인물 사진 넣어놨습니다. */
+
+/* 팀원 소개 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Nanum+Pen+Script&family=Orbit&display=swap');
+
+.iconbox {
+  width: 1200px;
+  height: 900px;
+  text-align: center;
+  margin: 10px auto 0px auto;
+  padding-top: 20px;
+  background-image: url(https://post-phinf.pstatic.net/MjAxOTAyMjFfOTMg/MDAxNTUwNzA4OTA3MTg1.S3ZbP4CIzCiUWaj-bGxA_0LTuHWOL2rVOuAmmSxqns0g.rc3N1np_602KXc_BcIpUtKjZZaWsuq9ETzs-ecrlsZ0g.PNG/mug_obj_201902210928276411.png?type=w1080);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  color: white;
+}
+
+.iconcontent {
+  font-size: 25px;
+  font-family: 'Bagel Fat One', cursive;
+font-family: 'Dongle', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Orbit', sans-serif;
+}
+
+.icon {
+  width: 150px;
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+}
+
+.icons {
+  width: 600px;
+  height: 500px;
+
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.icon > p {
+  font-size: 25px;
+  margin-top: -2px;
+}
+
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.icon:hover {
+  transform: rotate(25deg);
+}
+
+.btn > img {
+  border-radius: 10px;
+}
+
+.information {
+  margin-right: 50px;
+}
