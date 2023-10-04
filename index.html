@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B_team_five_website</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!--jQuery 사용-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>다같이 배우고 5조</title>
@@ -47,6 +49,36 @@
   </div>
   <div class="guest_book">
   <!--준호님-->
+  <div class="commentbox">
+    <h1>Teme.다같이 배우고 5조 방명록</h1>
+    <form>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="nickname" placeholder="닉네임">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="comment" placeholder="응원의 한마디!">
+        </div>
+        <button onclick="makebox()" type="button" class="btn btn-primary">등록</button>
+    </form>
+</div>
+
+
+<div class="commentbox">
+    <div id="newcommnet">
+        <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="/1.jpg" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                    <h4 class="mb-0">${nickname}</h4>
+                    <p class="mb-0 opacity-75"> ${comment}</p>
+                </div>
+                <small class="opacity-50 text-nowrap">now</small>
+            </div>
+        </div>
+
+
+    </div>
+</div>
   </div>
   <footer>
   </footer>
