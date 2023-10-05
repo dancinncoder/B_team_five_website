@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B_team_five_website</title>
   <link rel="stylesheet" href="./style.css">
+    <!--CSS 연결-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-  <!--jQuery 사용-->
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--JavaScript 연결-->
+  <script type="text/javascript" src="script.js"></script>  
+    <!--jQuery 사용-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>다같이 배우고 5조</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -43,206 +45,131 @@
 
     </div>
   </header>
-
   <div class="team_intro">
-    <div class="intro_left">
-			<div class="team_picture">
-			</div>
-		</div>
-		<div class="intro_right">
-			<div class="team_slogan">
-				<h1>"We gathered for coding"</h1>
-			</div>
-			<div class="team_routine">
-				<div class="routine_top">
-					<p>코딩에 처음 입문하는 5명이 모여서<br>
-						끌어주고 당겨주며 다같이 성장하는 5조입니다.</p>
-				</div>
-				<div class="routine_bottom">
-					<div class="routine_bottom_left">
-						<h1>Team<br>
-							Routine</h1>
-					</div>
-					<div class="routine_bottom_right">
-						<p>10:30 아침미팅</p>
-						<p>13:00 점심식사</p>
-						<p>15:00 오후미팅</p>
-						<p>20:00 랩업미팅</p>
-						<p>20:30 Git Merge</p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!--창근님-->
   </div>
-  
   <div class="member_intro">
     <div class="iconbox">
-      <h1 class="title">개성 넘치는 5조!</h1>
+      <h2>개성 넘치는 5조!</h2>
       <div class="iconcontent">
         <p>5조에는 다양한 능력들을 가진 개성 넘치는 인원들이 있습니다.</p>
         <p>각 인원들의 능력을 파악하고 효과적으로 사용하여 프로젝트에 성공하세요!</p>
       </div>
-      <div class="information" id="inforbox1">
-        <h1>이하민</h1>
-        <img src="./asset/memeber_pic/하민.jpg" width="400px" height="300px">
-        <div class="infor-content">
-          <p>MBTI : </p>
-          <p>좋아하는 것들 : </p>
-          <p>취미 : </p>
-          <p>장점 : </p>
+      <div class="icons">
+        <div class="member_area">
+          <div class="icon">
+            <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg" onclick="memberToggle1()"></button>
+            <p>이하민</p>
+          </div>
+          <div class="icon">
+            <button type="button" class="member_btn" id="member_btn" onclick="
+            memberToggle2()"><img src="./asset/memeber_pic/ai_창근.jpg"></button>
+            <p>윤창근</p>
+          </div>
+          <div class="icon">
+            <button type="button" class="member_btn" id="member_btn" onclick="
+            memberToggle3()"><img src="./asset/memeber_pic/ai_준호.jpg"></button>
+            <p>서준호</p>
+          </div>
+          <div class="icon">
+            <button type="button" class="member_btn" id="member_btn" onclick="
+            memberToggle4()"><img src="./asset/memeber_pic/ai_태용.jpg"></button>
+            <p>심태용</p>
+          </div>
+          <div class="icon">
+            <button type="button" class="member_btn" id="member_btn" onclick="
+            memberToggle5()"><img src="./asset/memeber_pic/ai_지훈.jpg"></button>
+            <p>서지훈</p>
+          </div>
         </div>
-      </div>
-      <div class="information" id="inforbox2">
-        <h1>윤창근</h1>
-        <img src="./asset/memeber_pic/창근.jpeg" width="400px" height="300px">
-        <div class="infor-content">
-          <p>MBTI : </p>
-          <p>좋아하는 것들 : </p>
-          <p>취미 : </p>
-          <p>장점 : </p>
+        <div class="information_box" id="informationBox_하민">
+          <img src="./asset/memeber_pic/하민_removebg.png">
+          <h3>이름</h3>
+          <div class="information_text">
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+          </div>
         </div>
-      </div>
-      <div class="information" id="inforbox3">
-        <h1>서준호</h1>
-        <img src="./asset/memeber_pic/준호.png" width="400px" height="300px">
-        <div class="infor-content">
-          <p>MBTI : </p>
-          <p>좋아하는 것들 : </p>
-          <p>취미 : </p>
-          <p>장점 : </p>
+        <div class="information_box" id="informationBox_창근">
+          <img src="./asset/memeber_pic/창근_removebg.png">
+          <h3>이름</h3>
+          <div class="information_text">
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+          </div>
         </div>
-      </div>
-      <div class="information" id="inforbox4">
-        <h1>심태용</h1>
-        <img src="./asset/memeber_pic/태용.jpg" width="400px" height="300px">
-        <div class="infor-content">
-          <p>MBTI : </p>
-          <p>좋아하는 것들 : </p>
-          <p>취미 : </p>
-          <p>장점 : </p>
+        <div class="information_box" id="informationBox_준호">
+          <img src="./asset/memeber_pic/준호_removebg.png">
+          <h3>이름</h3>
+          <div class="information_text">
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+          </div>
         </div>
-      </div>
-      <div class="information" id="inforbox5">
-        <h1>서지훈</h1>
-        <img src="./asset/memeber_pic/지훈.PNG" width="400px" height="300px">
-        <div class="infor-content">
-          <p>MBTI : </p>
-          <p>좋아하는 것들 : </p>
-          <p>취미 : </p>
-          <p>장점 : </p>
+        <div class="information_box" id="informationBox_태용">
+          <img src="./asset/memeber_pic/태용_removebg.png">
+          <h3>이름</h3>
+          <div class="information_text">
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+          </div>
+        </div>
+        <div class="information_box" id="informationBox_지훈">
+          <img src="./asset/memeber_pic/지훈_removebg.png">
+          <h3>이름</h3>
+          <div class="information_text">
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+            <p>MBTI</p>
+          </div>
         </div>
       </div>
 
-      <div class="icons">
-        <div class="icon">
-          <button onclick="openclose1()" class="btn"><img src="./asset/memeber_pic/ai_하민.jpg" width="150px"
-              height="200px"></button>
-          <p>이하민</p>
-        </div>
-        <div class="icon">
-          <button onclick="openclose2()" class="btn"><img src="./asset/memeber_pic/ai_창근.jpg" width="150px"
-              height="200px"></button>
-          <p>윤창근</p>
-        </div>
-        <div class="icon">
-          <button onclick="openclose3()" class="btn"><img src="./asset/memeber_pic/ai_준호.jpg" width="150px"
-              height="200px"></button>
-          <p>서준호</p>
-        </div>
-        <div class="icon">
-          <button onclick="openclose4()" class="btn"><img src="./asset/memeber_pic/ai_태용.jpg" width="150px"
-              height="200px"></button>
-          <p>심태용</p>
-        </div>
-        <div class="icon">
-          <button onclick="openclose()" class="btn"><img src="./asset/memeber_pic/ai_지훈.jpg" width="150px"
-              height="200px"></button>
-          <p>서지훈</p>
-        </div>
-      </div>
     </div>
-    <div class="guest_book">
-      <!--준호님-->
-    </div>
-    <footer>
-    </footer>
-    <!--지훈님,하민님-->
   </div>
   <div class="guest_book">
-
     <!--준호님-->
     <div class="commentbox">
       <h1>Teme.다같이 배우고 5조 방명록</h1>
-      <form class="commentfrom">
+      <form>
         <div class="mb-3">
-          <input type="text" class="form-control" id="nickname" placeholder="닉네임을 적어주세요!">
+          <input type="text" class="form-control" id="nickname" placeholder="닉네임">
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control" id="comment" placeholder="힘이나는 응원의 한마디!">
+          <input type="text" class="form-control" id="comment" placeholder="응원의 한마디!">
         </div>
-        <button onclick="makebox()" class="btn btn-secondary  " type="button">방명록 등록!</button>
+        <button onclick="makebox()" type="button" class="btn btn-primary">등록</button>
       </form>
     </div>
-
-
     <div class="commentbox">
       <div id="newcommnet">
         <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-          <img src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
+          <img src="/1.jpg" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div>
-              <h4 class="mb-0">5조 화이팅!</h4>
-              <p class="mb-0 opacity-75"> 같이 힘내봐요!!</p>
+              <h4 class="mb-0">${nickname}</h4>
+              <p class="mb-0 opacity-75"> ${comment}</p>
             </div>
             <small class="opacity-50 text-nowrap">now</small>
           </div>
-          <button type="button" onclick="removebtn(this)" id="removebtn" class="btn-close " aria-label="Close"></button>
         </div>
-
-        <script>
-          // 방명록 이름 댓글 추가 스크립트 입니다.
-          function makebox() {
-              let nickname = $('#nickname').val();
-              let comment = $('#comment').val();
-  
-              let temp_html =
-          `  
-            <div>
-              <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                  <img src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
-                  <div class="d-flex gap-2 w-100 justify-content-between">
-                      <div>
-                          <h4 class="mb-0">${nickname}</h4>
-                          <p class="mb-0 opacity-75"> ${comment}</p>
-                      </div>
-                      <small class="opacity-50 text-nowrap">now</small>
-                  </div>
-                  <button type="button" onclick="removebtn(this)" id="removebtn" class="btn-close " aria-label="Close"></button>
-              </div>
-          </div>      
-        `;
-              $('#newcommnet').append(temp_html);
-  
-          }
-          // 등록된 방명록 삭제 스크립트 입니다.
-          function removebtn(button) {
-            $(button).closest('.list-group-item').remove();
-          }
-          $
-      </script>
 
 
       </div>
     </div>
 
   </div>
-<!-- 밑에 아무것도 없어서 허전해서 넣어놧어요! -->
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-  <p>5조 팀소개 페이지 입니다.<a href="a">다같이 배우고 5조 </a>  </p>
-  <p class="mb-0">
-    <a href="#">맨 위로!</a>
-  </p>
-</footer>
+  <footer>
+  </footer>
 </body>
 
 </html>
