@@ -97,9 +97,10 @@ font-family: 'Orbit', sans-serif;
 
 .commentbox
 {
-width: 50%;
+width: 1200px;
 margin: 20px auto 20px auto;
 border: solid 1px black;
 padding: 20px;
 border-radius: 5px;
 }
+
