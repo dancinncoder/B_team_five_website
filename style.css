@@ -240,7 +240,7 @@ border-radius: 5px;
 }
 
 .team_slogan {
-  background-color: #1C2028;
+  /* background-color: #1C2028; */
   width: 650px;
   height: 100px;
   padding: 20px;
@@ -261,7 +261,7 @@ border-radius: 5px;
 }
 
 .team_aspiration {
-  background-color: #5C5F65;
+  /* background-color: #5C5F65; */
   width: 650px;
   height: 300px;
   padding: 20px;
