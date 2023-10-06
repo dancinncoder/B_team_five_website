@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0;
@@ -12,6 +13,26 @@ body {
   font-family: "DungGeunMo";
   src: url(/asset/font/DungGeunMo.woff);
 }
+@font-face {
+  font-family: pixel;
+  src: url(./fonts/pixelroborobo.otf);
+}
+
+body, h1, h2, p {
+  font-family: pixel;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("./gif/우주선.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+
 
 /* asset 에 인물 사진 넣어놨습니다. */
 
@@ -35,6 +56,7 @@ body {
   text-align: center;
   padding: 10px 10px 10px 10px;
   width: 800px;
+  color: white;
 }
 
 .iconbox>h2 {
@@ -254,3 +276,159 @@ body {
 }
 
 /* //* <---------------------------------------------준호----------------------------------------------------> */
+
+
+
+
+
+
+/* <창근> team intro part */
+
+.hidden {
+  display: none;
+}
+
+.team_intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 1200px;
+  margin: 20px auto 20px auto;
+}
+
+.intro_left {
+  width: 470px;
+}
+
+.intro_right {
+  width: 700px;
+}
+
+.team_picture {
+  width: 400px;
+  height: 420px;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  border-radius: 30px;
+  box-shadow: 0 1px 10px rgb(0, 0, 0);
+
+  background-image: url("./asset/memeber_pic/teampicture.jpg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+  text-align: center;
+}
+
+.team_picture:hover {
+  transform: scale(1.05)
+}
+
+.saEnter {
+  padding: 10px 15px 10px 15px;
+  margin: auto auto 0px auto;
+  border-radius: 30px;
+  background-color: #F6BB43;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 1px 10px rgb(0, 0, 0);
+
+  font-size: 25px;
+  text-align: center;
+  color: white;
+
+  /* display: flex; */
+}
+
+.saEnter:active {
+  transform: scale(0.94);
+}
+
+.team_slogan {
+  background-color: #1C2028;
+  width: 650px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #F6BB43;
+}
+
+.team_slogan h1 {
+  font-size: 40px;
+}
+
+.team_aspiration {
+  background-color: #5C5F65;
+  width: 650px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  border-radius: 30px;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.aspiration_top {
+  color: #F6BB43;
+  font-size: 22px;
+}
+
+.aspiration_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+  width: 610px;
+
+  align-items: center;
+  line-height: 60%;
+}
+
+.aspiration_bottom_left h1 {
+  font-size: 30px;
+}
+
+.aspiration_bottom_right {
+  width: 400px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+/* 네비게이션 바 */
+
+.container-fluid {
+  margin-top: 50px;
+  position: fixed;
+  background-color: transparent;
+}
+
+.container-fluid .nav-item {
+  font-size: 25px;
+  align-items: right;
+  font-family: pixel;
+}
+.navbar-brand {
+  font-size: 40px;
+  color: yellow;
+  font-family: pixel;
+}

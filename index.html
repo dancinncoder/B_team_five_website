@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B_team_five_website</title>
 
+
     <!--CSS 연결-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
     <!--JavaScript 연결-->
   <script type="text/javascript" src="script.js"></script>  
     <!--jQuery 사용-->
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>다같이 배우고 5조</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,13 +25,13 @@
     .mytitle {
       margin-top: 30px;
       height: 250px;
-      background-color: gray;
-      color: black;
+      color: white;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
 
       background-image: url('dhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773');
       background-position: center;
@@ -40,6 +42,27 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#teamintro">팀 루틴</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teamintroduce">팀원 소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comment">방명록</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <header>
     <div class="mytitle">
       <h1>다같이 배우고 5조</h1>
@@ -47,10 +70,43 @@
 
     </div>
   </header>
-  <div class="team_intro">
-    <!--창근님-->
+
+  <div class="team_intro" id="teamintro">
+    <div class="intro_left">
+      <div class="team_picture">
+        <button class="saEnter" type="button"
+          onclick="window.open('https://teamsparta.notion.site/B-5-5-S-A-993034de600a4ebcb72004b7ecf38552')">SA 보고
+          5조</button>
+      </div>
+    </div>
+    <div class="intro_right">
+      <div class="team_slogan">
+        <h1>"We gathered for coding"</h1>
+      </div>
+      <div class="team_aspiration">
+        <div class="aspiration_top">
+          <p>코딩에 처음 입문하는 5명이 모여서<br>
+            끌어주고 당겨주며 다같이 성장하는 5조입니다.</p>
+        </div>
+        <div class="aspiration_bottom">
+          <div class="aspiration_bottom_left">
+            <h1>Team<br>
+              Aspiration</h1>
+          </div>
+          <div class="aspiration_bottom_right">
+            <p>Aspiration1---</p>
+            <p>Aspiration2-------</p>
+            <p>Aspiration3-----------</p>
+            <p>Aspiration4-------------------</p>
+            <p>Aspiration5---------------------------</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="member_intro">
+  </div>
+
+  <div class="member_intro" id="teamintroduce">
     <div class="iconbox">
       <h2>개성 넘치는 5조!</h2>
       <div class="iconcontent">
@@ -60,7 +116,8 @@
       <div class="icons">
         <div class="member_area">
           <div class="icon">
-            <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg" onclick="memberToggle1()"></button>
+            <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg"
+                onclick="memberToggle1()"></button>
             <p>이하민</p>
           </div>
           <div class="icon">
@@ -85,7 +142,7 @@
           </div>
         </div>
         <div class="information_box" id="informationBox_하민">
-          <img src="./asset/memeber_pic/하민_removebg.png">
+          <img src="./asset/memeber_pic/하민_removebg.png">
           <h3>이하민(Lead)</h3>
           <div class="information_text">
             <p>MBTI : ISFJ</p>
@@ -95,7 +152,7 @@
           </div>
         </div>
         <div class="information_box" id="informationBox_창근">
-          <img src="./asset/memeber_pic/창근_removebg.png">
+          <img src="./asset/memeber_pic/창근_removebg.png">
           <h3>윤창근</h3>
           <div class="information_text">
             <p>MBTI : INTJ</p>
@@ -105,7 +162,7 @@
           </div>
         </div>
         <div class="information_box" id="informationBox_준호">
-          <img src="./asset/memeber_pic/준호_removebg.png">
+          <img src="./asset/memeber_pic/준호_removebg.png">
           <h3>서준호</h3>
           <div class="information_text">
             <p>MBTI : ISTP</p>
@@ -115,7 +172,7 @@
           </div>
         </div>
         <div class="information_box" id="informationBox_태용">
-          <img src="./asset/memeber_pic/태용_removebg.png">
+          <img src="./asset/memeber_pic/태용_removebg.png">
           <h3>심태용</h3>
           <div class="information_text">
             <p>MBTI : ISTJ</p>
@@ -125,13 +182,13 @@
           </div>
         </div>
         <div class="information_box" id="informationBox_지훈">
-          <img src="./asset/memeber_pic/지훈_removebg.png">
+          <img src="./asset/memeber_pic/지훈_removebg.png">
           <h3>서지훈</h3>
           <div class="information_text">
             <p>MBTI : ISFJ</p>
-            <p>좋아하는 것들 : </p>
-            <p>취미 : </p>
-            <p>장점 : </p>
+            <p>좋아하는 것들 :동물(강아지, 고양이) </p>
+            <p>취미 : 운동, 음악듣기, 게임</p>
+            <p>장점 : 끈기, 꼼꼼함</p>
           </div>
         </div>
       </div>
@@ -141,11 +198,13 @@
       <!--준호님-->
   <div class="guest_book">
 
+
     <div class="commentbox nesfont">
       <div class=" neon">
       <h1 >Teme.다같이 배우고 5조 방명록</h1>
     </div>
       <form class="commentfrom  neon">
+
         <div class="mb-3">
           <input type="text" class="form-control " id="nickname" placeholder="닉네임을 적어주세요!">
           <div class="warning1">
