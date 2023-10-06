@@ -1,16 +1,21 @@
-// 카드 토글기능
-function opneclose1() {
-  $('#inforbox1').toggle();
+// member detail toggle
+function memberToggle1(){
+  $('#informationBox_하민').toggle(1000);
 }
-function opneclose2() {
-  $('#inforbox2').toggle();
+
+function memberToggle2(){
+  $('#informationBox_창근').toggle(1000);
 }
-function opneclose3() {
-  $('#inforbox3').toggle();
+
+function memberToggle3(){
+  $('#informationBox_준호').toggle(1000);
 }
-function opneclose4() {
-  $('#inforbox4').toggle();
+
+function memberToggle4(){
+  $('#informationBox_태용').toggle(1000);
 }
-function opneclose5() {
-  $('#inforbox5').toggle();
+
+function memberToggle5(){
+  $('#informationBox_지훈').toggle(1000);
 }
+

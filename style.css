@@ -1,7 +1,147 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/c5/af/67/c5af676adb3b806f6cb69fe12920acc6.gif");
+  background-size: cover;
 }
+
+.form-contro {
+  width: 50%;
+}
+
+.commentbox {
+width: 50%;
+margin: 20px auto 20px auto;
+padding: 20px;
+border-radius: 5px;
+}
+
+/* asset 에 인물 사진 넣어놨습니다. */
+
+/* 팀원 소개 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Nanum+Pen+Script&family=Orbit&display=swap');
+
+.member_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.iconbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  width: 800px;
+}
+
+.iconbox > h2 {
+  margin-top: 50px;
+}
+
+.iconcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px 5px 10px;
+}
+
+.iconcontent > p {
+  margin: 5px 5px 5px 5px;;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+  margin: 50px 10px 80px 10px;
+}
+
+.member_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction : row;
+  flex-wrap : wrap;
+  width: 400px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 20px 10px 20px;
+}
+
+.icon > p {
+  font-size: 20px;
+  margin-top: -2px;
+}
+
+.member_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.member_btn > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.icon:hover {
+  transform: scale(1.035);
+}
+
+.information_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 300px;
+  height: 500px;
+}
+
+.information_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.information_box > img {
+  width: 200px;
+  object-fit: cover;
+  margin: 10px 10px 10px 10px;
+}
+
+
+
+
+
+
+
 .form-contro {
   width: 50%;
 }
@@ -13,201 +153,4 @@ margin: 20px auto 20px auto;
 border: solid 1px black;
 padding: 20px;
 border-radius: 5px;
-}
-
-/* asset 에 인물 사진 넣어놨습니다. */
-
-/* 팀원 소개 */
-
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle&family=Nanum+Pen+Script&family=Orbit&display=swap');
-
-.iconbox {
-  width: 1200px;
-  height: 900px;
-  text-align: center;
-  margin: 10px auto 0px auto;
-  padding-top: 20px;
-  background-image: url(https://post-phinf.pstatic.net/MjAxOTAyMjFfOTMg/MDAxNTUwNzA4OTA3MTg1.S3ZbP4CIzCiUWaj-bGxA_0LTuHWOL2rVOuAmmSxqns0g.rc3N1np_602KXc_BcIpUtKjZZaWsuq9ETzs-ecrlsZ0g.PNG/mug_obj_201902210928276411.png?type=w1080);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  color: white;
-}
-
-.iconcontent {
-  font-size: 25px;
-  font-family: 'Bagel Fat One', cursive;
-font-family: 'Dongle', sans-serif;
-font-family: 'Nanum Pen Script', cursive;
-font-family: 'Orbit', sans-serif;
-}
-
-.icon {
-  width: 150px;
-  height: 200px;
-  float: left;
-  margin-right: 50px;
-  margin-bottom: 50px;
-
-}
-
-.icons {
-  width: 600px;
-  height: 500px;
-
-  margin-top: 50px;
-  margin-left: 30px;
-}
-
-.icon > p {
-  font-size: 25px;
-  margin-top: -2px;
-}
-
-
-.btn {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-}
-
-.icon:hover {
-  transform: scale(1.3)
-}
-
-.btn > img {
-  border-radius: 10px;
-}
-
-/* 정보창 */
-
-.information {
-  text-align: center;
-  width: 500px;
-  float: right;
-  height: 600px; 
-  margin-right: 20px;
-  display: none;
- }
- 
- .information > img {
-   margin-left: 5px;
-   border-radius: 30px;
- }
- 
- .infor-content {
-   height: 200px;
-   text-align: left;
-   padding: 10px 10px 10px 20px;
-   font-size: 20px;
- }
-
-
-
-
-
-
-
-.form-contro {
-  width: 50%;
-}
-
-.commentbox
-{
-width: 1200px;
-margin: 20px auto 20px auto;
-border: solid 1px black;
-padding: 20px;
-border-radius: 5px;
-}
-
-
-
-
-/* <창근> team intro part */
-
-.team_intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  width: 1200px;
-  margin: 20px auto 20px auto;
-}
-
-.intro_left {
-  width: 470px
-}
-
-.intro_right {
-  width: 700px
-}
-
-.team_picture {
-  width: 400px;
-  height: 420px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
-  border-radius: 30px;
-
-  background-image: url("./asset/memeber_pic/teampicture.jpg");
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  font-size: 40px;
-  text-align: center;
-}
-
-.team_slogan {
-  background-color: #1C2028;
-  width: 650px;
-  height: 100px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
-  border-radius: 30px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  color: white;
-}
-
-.team_slogan h1 {
-  font-size: 40px;
-}
-
-.team_routine {
-  background-color: #1C2028;
-  width: 650px;
-  height: 300px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
-  border-radius: 30px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 20px;
-  text-align: center;
-  color: white;
-}
-
-.routine_bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 600px;
-  height: 150px;
-  margin: 10px auto auto auto;
-
-  align-items: center;
-  line-height: 60%;
 }
