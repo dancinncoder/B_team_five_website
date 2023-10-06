@@ -39,7 +39,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('dhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773');
   background-position: center;
   background-size: cover;
 }
@@ -337,7 +336,7 @@ html, body {
   border-radius: 30px;
   box-shadow: 0 1px 10px rgb(0, 0, 0);
 
-  background-image: url("./asset/memeber_pic/teampicture.jpg");
+  background-image: url("./asset/memeber_pic/teampicture3.jpg");
   background-size: cover;
 
   display: flex;
@@ -426,6 +425,10 @@ html, body {
 
   align-items: center;
   line-height: 60%;
+
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .aspiration_bottom_left h1 {

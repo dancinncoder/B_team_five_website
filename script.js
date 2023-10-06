@@ -118,7 +118,7 @@ function openSA() {
   console.log("click");
 }
 
-saEnter.classList.add(HIDDEN_CLASSNAME);
+// saEnter.classList.add(HIDDEN_CLASSNAME);
 teamPicture.addEventListener("mouseenter", saEventHandler.Mouseenter);
 teamPicture.addEventListener("mouseleave", saEventHandler.mouseleave);
 saEnter.addEventListener("click", openSA);
