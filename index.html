@@ -27,7 +27,8 @@
       align-items: center;
       justify-content: center;
 
-      background-image: url('https://postfiles.pstatic.net/MjAyMzEwMDRfMTgy/MDAxNjk2NDE2MTgyMjY1.M7Df-6DcBYRFMSMFrSKoHcdhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773');
+      /* console 창 에러 : 헤더 배경사진 링크 오류 */
+      /* background-image: url('https://postfiles.pstatic.net/MjAyMzEwMDRfMTgy/MDAxNjk2NDE2MTgyMjY1.M7Df-6DcBYRFMSMFrSKoHcdhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773'); */
       background-position: center;
       background-size: cover;
 
@@ -46,35 +47,37 @@
 
   <div class="team_intro">
     <div class="intro_left">
-			<div class="team_picture">
-			</div>
-		</div>
-		<div class="intro_right">
-			<div class="team_slogan">
-				<h1>"We gathered for coding"</h1>
-			</div>
-			<div class="team_routine">
-				<div class="routine_top">
-					<p>코딩에 처음 입문하는 5명이 모여서<br>
-						끌어주고 당겨주며 다같이 성장하는 5조입니다.</p>
-				</div>
-				<div class="routine_bottom">
-					<div class="routine_bottom_left">
-						<h1>Team<br>
-							Routine</h1>
-					</div>
-					<div class="routine_bottom_right">
-						<p>10:30 아침미팅</p>
-						<p>13:00 점심식사</p>
-						<p>15:00 오후미팅</p>
-						<p>20:00 랩업미팅</p>
-						<p>20:30 Git Merge</p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="team_picture">
+        <button class="saEnter" type="button" onclick="window.open('https://teamsparta.notion.site/B-5-5-S-A-993034de600a4ebcb72004b7ecf38552')">SA 보고 5조</button>
+      </div>
+    </div>
+    <div class="intro_right">
+      <div class="team_slogan">
+        <h1>"We gathered for coding"</h1>
+      </div>
+      <div class="team_aspiration">
+        <div class="aspiration_top">
+          <p>코딩에 처음 입문하는 5명이 모여서<br>
+            끌어주고 당겨주며 다같이 성장하는 5조입니다.</p>
+        </div>
+        <div class="aspiration_bottom">
+          <div class="aspiration_bottom_left">
+            <h1>Team<br>
+              Aspiration</h1>
+          </div>
+          <div class="aspiration_bottom_right">
+            <p>Aspiration1---</p>
+            <p>Aspiration2---------</p>
+            <p>Aspiration3----------------</p>
+            <p>Aspiration4------------------------</p>
+            <p>Aspiration5---------------------------------</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
+  </div>
+
   <div class="member_intro">
     <div class="iconbox">
       <h1 class="title">개성 넘치는 5조!</h1>
@@ -188,7 +191,9 @@
     <div class="commentbox">
       <div id="newcommnet">
         <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-          <img src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
+          <img
+            src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
+            alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
           <div class="d-flex gap-2 w-100 justify-content-between">
             <div>
               <h4 class="mb-0">5조 화이팅!</h4>
@@ -202,11 +207,11 @@
         <script>
           // 방명록 이름 댓글 추가 스크립트 입니다.
           function makebox() {
-              let nickname = $('#nickname').val();
-              let comment = $('#comment').val();
-  
-              let temp_html =
-          `  
+            let nickname = $('#nickname').val();
+            let comment = $('#comment').val();
+
+            let temp_html =
+              `  
             <div>
               <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                   <img src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
@@ -221,28 +226,30 @@
               </div>
           </div>      
         `;
-              $('#newcommnet').append(temp_html);
-  
+            $('#newcommnet').append(temp_html);
+
           }
           // 등록된 방명록 삭제 스크립트 입니다.
           function removebtn(button) {
             $(button).closest('.list-group-item').remove();
           }
           $
-      </script>
+        </script>
 
 
       </div>
     </div>
 
   </div>
-<!-- 밑에 아무것도 없어서 허전해서 넣어놧어요! -->
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-  <p>5조 팀소개 페이지 입니다.<a href="a">다같이 배우고 5조 </a>  </p>
-  <p class="mb-0">
-    <a href="#">맨 위로!</a>
-  </p>
-</footer>
+  <!-- 밑에 아무것도 없어서 허전해서 넣어놧어요! -->
+  <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+    <p>5조 팀소개 페이지 입니다.<a href="a">다같이 배우고 5조 </a> </p>
+    <p class="mb-0">
+      <a href="#">맨 위로!</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
