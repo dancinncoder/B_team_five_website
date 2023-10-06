@@ -4,22 +4,13 @@ html, body {
   height: 100%;
   background-image: url("https://i.pinimg.com/originals/c5/af/67/c5af676adb3b806f6cb69fe12920acc6.gif");
   background-size: cover;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8549b4e25d04c07713a12cccd24fad67a393e712
 }
 
 .form-contro {
   width: 50%;
 }
 
-<<<<<<< HEAD
 .commentbox {
-=======
-.commentbox
-{
->>>>>>> 8549b4e25d04c07713a12cccd24fad67a393e712
 width: 50%;
 margin: 20px auto 20px auto;
 padding: 20px;
