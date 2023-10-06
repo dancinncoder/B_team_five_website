@@ -1,3 +1,18 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("/asset/memeber_pic/______6.gif");
+  background-size: cover;
+}
+
+/* / 도트 게임 스타일 폰트  */
+@font-face {
+  font-family: "DungGeunMo";
+  src: url(/asset/font/DungGeunMo.woff);
+}
 @font-face {
   font-family: pixel;
   src: url(./fonts/pixelroborobo.otf);
@@ -14,18 +29,10 @@ html, body {
   background-image: url("./gif/우주선.gif");
   background-size: cover;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
-.form-contro {
-  width: 50%;
-}
 
-.commentbox {
-width: 50%;
-margin: 20px auto 20px auto;
-padding: 20px;
-border-radius: 5px;
-}
 
 /* asset 에 인물 사진 넣어놨습니다. */
 
@@ -52,7 +59,7 @@ border-radius: 5px;
   color: white;
 }
 
-.iconbox > h2 {
+.iconbox>h2 {
   margin-top: 50px;
 }
 
@@ -64,8 +71,9 @@ border-radius: 5px;
   margin: 10px 5px 5px 10px;
 }
 
-.iconcontent > p {
-  margin: 5px 5px 5px 5px;;
+.iconcontent>p {
+  margin: 5px 5px 5px 5px;
+  ;
 }
 
 .icons {
@@ -84,8 +92,8 @@ border-radius: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction : row;
-  flex-wrap : wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 400px;
 }
 
@@ -98,7 +106,7 @@ border-radius: 5px;
   margin: 10px 20px 10px 20px;
 }
 
-.icon > p {
+.icon>p {
   font-size: 20px;
   margin-top: -2px;
 }
@@ -113,7 +121,7 @@ border-radius: 5px;
   border: none;
 }
 
-.member_btn > img {
+.member_btn>img {
   width: 120px;
   height: 120px;
   border-radius: 18px;
@@ -141,7 +149,7 @@ border-radius: 5px;
   align-items: start;
 }
 
-.information_box > img {
+.information_box>img {
   width: 200px;
   object-fit: cover;
   margin: 10px 10px 10px 10px;
@@ -153,19 +161,121 @@ border-radius: 5px;
 
 
 
+
+/* <---------------------------------------------준호----------------------------------------------------> */
+.guest_book{
+
+  padding: 30px;
+  
+}
 .form-contro {
   width: 50%;
 }
 
-.commentbox
-{
-width: 50%;
-margin: 20px auto 20px auto;
-border: solid 1px black;
-padding: 20px;
-border-radius: 5px;
+.commentbox {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: transparent;
 }
 
+.commentbox {
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  border: 4px double rgb(54, 146, 222);
+  outline: 0;
+  border-radius: 5px;
+}
+.commentbox > text {
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  border: 3px double rgb(54, 146, 222);
+
+}
+/* 마우스 올렷을시에!! 네온 사인 효과  */
+.neon :hover {
+  background: rgb(66, 145, 210);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  box-shadow: 0 0 15px rgb(54, 146, 222), 0 0 45px rgb(54, 146, 222),
+  0 0 75px rgb(54, 146, 222),0 0 150px rgb(54, 146, 222);
+}
+/*  네온 사인 효과  */
+
+  .neon :hover{
+    z-index: 1;
+    color: #495057;
+    background-color: transparent;
+
+  }
+
+
+.list-group-item {
+  background-color: transparent;
+  color: white;
+}
+
+.form-control {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 3px double rgb(54, 146, 222);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+.make{
+  background-color: transparent;
+  color: #fff;
+  border: 3px double rgb(54, 146, 222);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+
+}
+.list-group-item
+{
+  border: 3px double rgb(54, 146, 222);
+}
+
+.warning1 {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.warning2 {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+/*방명록 관련 CSS  */
+
+.nesfont {
+  font-family: "DungGeunMo";
+  /* color: whitesmoke; */
+}
+
+/* //* <---------------------------------------------준호----------------------------------------------------> */
 
 
 
@@ -301,4 +411,24 @@ border-radius: 5px;
   width: 400px;
   padding-left: 20px;
   text-align: left;
+}
+
+
+/* 네비게이션 바 */
+
+.container-fluid {
+  margin-top: 50px;
+  position: fixed;
+  background-color: transparent;
+}
+
+.container-fluid .nav-item {
+  font-size: 25px;
+  align-items: right;
+  font-family: pixel;
+}
+.navbar-brand {
+  font-size: 40px;
+  color: yellow;
+  font-family: pixel;
 }
