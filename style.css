@@ -13,26 +13,40 @@ body {
   font-family: "DungGeunMo";
   src: url(/asset/font/DungGeunMo.woff);
 }
-@font-face {
-  font-family: pixel;
-  src: url(./fonts/pixelroborobo.otf);
-}
+
 
 body, h1, h2, p {
-  font-family: pixel;
+  font-family: "DungGeunMo";
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url("./gif/우주선.gif");
+  background-image: url("https://wallpaperaccess.com/full/2825704.gif");
   background-size: cover;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
 
+/* header */ 
+.mytitle {
+  margin-top: 30px;
+  height: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('dhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773');
+  background-position: center;
+  background-size: cover;
+}
+
+.mytitle > h1 {
+  font-size: 3.5rem;
+}
 
 /* asset 에 인물 사진 넣어놨습니다. */
 
@@ -59,8 +73,8 @@ html, body {
   color: white;
 }
 
-.iconbox>h2 {
-  margin-top: 50px;
+.iconbox > h2 {
+  margin-top: 100px;
 }
 
 .iconcontent {
@@ -73,7 +87,7 @@ html, body {
 
 .iconcontent>p {
   margin: 5px 5px 5px 5px;
-  ;
+  font-size: 1.2rem;
 }
 
 .icons {
@@ -109,6 +123,10 @@ html, body {
 .icon>p {
   font-size: 20px;
   margin-top: -2px;
+}
+
+.iconbox > h2 {
+  font-size: 2.5rem;
 }
 
 .member_btn {
@@ -147,6 +165,13 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.information_text > p {
+ margin: 0;
 }
 
 .information_box>img {
@@ -291,7 +316,7 @@ html, body {
 .team_intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  scale: 80%;
   width: 1200px;
   margin: 20px auto 20px auto;
 }
@@ -425,10 +450,14 @@ html, body {
 .container-fluid .nav-item {
   font-size: 25px;
   align-items: right;
-  font-family: pixel;
+  font-family: "DungGeunMo";
 }
 .navbar-brand {
   font-size: 40px;
   color: yellow;
-  font-family: pixel;
+  font-family: "DungGeunMo";
+}
+
+.navbar {
+  padding: 0;
 }
