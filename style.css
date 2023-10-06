@@ -1,9 +1,19 @@
+@font-face {
+  font-family: pixel;
+  src: url(./fonts/pixelroborobo.otf);
+}
+
+body, h1, h2, p {
+  font-family: pixel;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url("https://i.pinimg.com/originals/c5/af/67/c5af676adb3b806f6cb69fe12920acc6.gif");
+  background-image: url("./gif/우주선.gif");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .form-contro {
@@ -39,6 +49,7 @@ border-radius: 5px;
   text-align: center;
   padding: 10px 10px 10px 10px;
   width: 800px;
+  color: white;
 }
 
 .iconbox > h2 {
