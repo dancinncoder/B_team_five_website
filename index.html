@@ -37,6 +37,27 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#teamintro">팀 루틴</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teamintroduce">팀원 소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comment">방명록</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <header>
     <div class="mytitle">
       <h1>다같이 배우고 5조</h1>
@@ -45,7 +66,7 @@
     </div>
   </header>
 
-  <div class="team_intro">
+  <div class="team_intro" id="teamintro">
     <div class="intro_left">
       <div class="team_picture">
         <button class="saEnter" type="button"
@@ -80,7 +101,7 @@
   </div>
   </div>
 
-  <div class="member_intro">
+  <div class="member_intro" id="teamintroduce">
     <div class="iconbox">
       <h2>개성 넘치는 5조!</h2>
       <div class="iconcontent">
@@ -171,7 +192,7 @@
   </div>
   <div class="guest_book">
     <!--준호님-->
-    <div class="commentbox">
+    <div class="commentbox" id="comment">
       <h1>Teme.다같이 배우고 5조 방명록</h1>
       <form>
         <div class="mb-3">

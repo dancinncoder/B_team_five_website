@@ -14,6 +14,7 @@ html, body {
   background-image: url("./gif/우주선.gif");
   background-size: cover;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 .form-contro {
@@ -301,4 +302,24 @@ border-radius: 5px;
   width: 400px;
   padding-left: 20px;
   text-align: left;
+}
+
+
+/* 네비게이션 바 */
+
+.container-fluid {
+  margin-top: 50px;
+  position: fixed;
+  background-color: transparent;
+}
+
+.container-fluid .nav-item {
+  font-size: 25px;
+  align-items: right;
+  font-family: pixel;
+}
+.navbar-brand {
+  font-size: 40px;
+  color: yellow;
+  font-family: pixel;
 }
