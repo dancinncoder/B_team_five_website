@@ -69,12 +69,14 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  width: 800px;
+  width: 1100px;
   color: white;
+  border: 1px solid red;
 }
 
 .iconbox > h2 {
   margin-top: 100px;
+  border: 1px solid red;
 }
 
 .iconcontent {
@@ -88,6 +90,7 @@ html, body {
 .iconcontent>p {
   margin: 5px 5px 5px 5px;
   font-size: 1.2rem;
+  border: 1px solid red;
 }
 
 .icons {
@@ -100,15 +103,24 @@ html, body {
   margin: 50px 10px 80px 10px;
 }
 
-.member_area {
+.icon_midbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: row;
+  border: 1px solid yellow;
   flex-wrap: wrap;
+}
+
+.member_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 400px;
+  flex-wrap: wrap;
+  border: 1px solid red;
 }
 
 .icon {
@@ -158,6 +170,7 @@ html, body {
   display: none;
   width: 300px;
   height: 500px;
+  border: 1px solid red;
 }
 
 .information_text {
