@@ -11,7 +11,7 @@ body {
 /* / 도트 게임 스타일 폰트  */
 @font-face {
   font-family: "DungGeunMo";
-  src: url(/asset/font/DungGeunMo.woff);
+  src: url(./asset/font/DungGeunMo.woff);
 }
 
 
@@ -39,7 +39,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('dhY3lazCQnttXPLkJI6C8g.AmOklYhDR7dMbYZwMhM9mPoeE38EJ1uRrXj4Lqus0tQg.PNG.tytytyrhrh/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_(1).png?type=w773');
   background-position: center;
   background-size: cover;
 }
@@ -130,6 +129,7 @@ html, body {
   align-items: center;
   text-align: center;
   margin: 10px 20px 10px 20px;
+  border-radius: 20px;
 }
 
 .icon>p {
@@ -192,6 +192,21 @@ html, body {
   object-fit: cover;
   margin: 10px 10px 10px 10px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.member_btn > img:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  box-shadow: 0 0 15px rgb(54, 146, 222), 0 0 45px rgb(54, 146, 222),
+  0 0 75px rgb(54, 146, 222),0 0 150px rgb(54, 146, 222);
+}
+
 
 
 
@@ -350,7 +365,7 @@ html, body {
   border-radius: 30px;
   box-shadow: 0 1px 10px rgb(0, 0, 0);
 
-  background-image: url("./asset/memeber_pic/teampicture.jpg");
+  background-image: url("./asset/memeber_pic/teampicture3.jpg");
   background-size: cover;
 
   display: flex;
@@ -388,7 +403,7 @@ html, body {
 }
 
 .team_slogan {
-  background-color: #1C2028;
+  /* background-color: #1C2028; */
   width: 650px;
   height: 100px;
   padding: 20px;
@@ -409,7 +424,7 @@ html, body {
 }
 
 .team_aspiration {
-  background-color: #5C5F65;
+  /* background-color: #5C5F65; */
   width: 650px;
   height: 300px;
   padding: 20px;
@@ -439,6 +454,10 @@ html, body {
 
   align-items: center;
   line-height: 60%;
+
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .aspiration_bottom_left h1 {
@@ -467,7 +486,6 @@ html, body {
 }
 .navbar-brand {
   font-size: 40px;
-  color: yellow;
   font-family: "DungGeunMo";
 }
 
