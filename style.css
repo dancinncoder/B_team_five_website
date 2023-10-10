@@ -289,8 +289,8 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
   width: 800px;
+  flex-wrap: wrap;
 }
 
 .member_area {
@@ -352,19 +352,7 @@ html, body {
 
 }
 
-#informationBox_하민 {
-  display: none;
-}
-
-#informationBox_창근 {
-  display: none;
-}
-
-#informationBox_준호 {
-  display: none;
-}
-
-#informationBox_지훈 {
+#informationBox_하민, #informationBox_창근, #informationBox_준호, #informationBox_지훈 {
   display: none;
 }
 
