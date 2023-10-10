@@ -106,11 +106,9 @@ function saMouseenter() {
 const saEventHandler = {
   'Mouseenter': () => {
     saEnter.classList.remove(HIDDEN_CLASSNAME);
-    console.log("mouseenter");x
   },
   mouseleave: function saMouseLeave() {
     saEnter.classList.add(HIDDEN_CLASSNAME);
-    console.log("MouseLeaver");
   }
 };
 
