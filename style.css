@@ -162,10 +162,32 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
-  width: 300px;
+  width: 400px;
   height: 500px;
 }
+
+
+
+
+/* test */
+#informationBox_하민 {
+  display: none;
+}
+
+#informationBox_창근 {
+  display: none;
+}
+
+#informationBox_준호 {
+  display: none;
+}
+
+#informationBox_지훈 {
+  display: none;
+}
+
+
+
 
 .information_text {
   display: flex;
@@ -175,6 +197,7 @@ html, body {
   background-color: rgb(0, 0, 0, 0.6);
   border-radius: 15px;
   padding: 15px;
+  width: 400px;
 }
 
 .information_text > p {
@@ -376,6 +399,7 @@ a {
 .team_picture:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgb(54, 146, 222), 0 0 45px rgb(54, 146, 222), 0 0 75px rgb(54, 146, 222),0 0 150px rgb(54, 146, 222);
+  cursor : pointer;
 }
 
 .saEnter {

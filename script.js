@@ -1,22 +1,38 @@
 // member detail toggle
 function memberToggle1(){
   $('#informationBox_하민').toggle(1000);
+  if (document.getElementById("informationBox_하민").style.display = "block") {
+    document.getElementById("informationBox_창근").style.display = "none";
+    document.getElementById("informationBox_준호").style.display = "none";
+    document.getElementById("informationBox_지훈").style.display = "none";
+  }
 }
 
 function memberToggle2(){
   $('#informationBox_창근').toggle(1000);
+  if (document.getElementById("informationBox_창근").style.display = "block") {
+    document.getElementById("informationBox_하민").style.display = "none";
+    document.getElementById("informationBox_준호").style.display = "none";
+    document.getElementById("informationBox_지훈").style.display = "none";
+  }
 }
 
 function memberToggle3(){
   $('#informationBox_준호').toggle(1000);
-}
-
-function memberToggle4(){
-  $('#informationBox_태용').toggle(1000);
+  if (document.getElementById("informationBox_준호").style.display = "block") {
+    document.getElementById("informationBox_창근").style.display = "none";
+    document.getElementById("informationBox_하민").style.display = "none";
+    document.getElementById("informationBox_지훈").style.display = "none";
+  }
 }
 
 function memberToggle5(){
   $('#informationBox_지훈').toggle(1000);
+  if (document.getElementById("informationBox_지훈").style.display = "block") {
+    document.getElementById("informationBox_창근").style.display = "none";
+    document.getElementById("informationBox_준호").style.display = "none";
+    document.getElementById("informationBox_하민").style.display = "none";
+  }
 }
 
 
@@ -112,12 +128,8 @@ const saEventHandler = {
   }
 };
 
-function openSA() {
-  console.log("click");
-}
-
-// saEnter.classList.add(HIDDEN_CLASSNAME);
 teamPicture.addEventListener("mouseenter", saEventHandler.Mouseenter);
 teamPicture.addEventListener("mouseleave", saEventHandler.mouseleave);
-saEnter.addEventListener("click", openSA);
+
+
 
