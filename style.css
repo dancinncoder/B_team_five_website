@@ -326,6 +326,7 @@ html, body {
 
 .intro_right {
   width: 700px;
+  padding-top: 15px;
 }
 
 .team_picture {
@@ -365,8 +366,7 @@ html, body {
   font-size: 25px;
   text-align: center;
   color: white;
-
-  /* display: flex; */
+    /* display: flex; */
 }
 
 .saEnter:active {
@@ -378,7 +378,7 @@ html, body {
   width: 650px;
   height: 100px;
   padding: 20px;
-  margin: 20px auto 20px auto;
+  margin: auto;
   border-radius: 30px;
 
   display: flex;
@@ -392,14 +392,16 @@ html, body {
 
 .team_slogan h1 {
   font-size: 40px;
+  margin: 0px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .team_aspiration {
   /* background-color: #5C5F65; */
   width: 650px;
   height: 300px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
+  padding: 0px 20px;
+  margin: auto;
   border-radius: 30px;
 
   /* display: flex;
@@ -413,8 +415,19 @@ html, body {
 }
 
 .aspiration_top {
-  color: #F6BB43;
+  /* color: #F6BB43; */
   font-size: 22px;
+}
+
+.aspiration_top p{
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.team_promise p {
+  color: #F6BB43;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .aspiration_bottom {
@@ -429,16 +442,28 @@ html, body {
   background-color: rgb(0, 0, 0, 0.6);
   border-radius: 15px;
   padding: 15px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .aspiration_bottom_left h1 {
   font-size: 30px;
+  margin : 0px
 }
 
 .aspiration_bottom_right {
   width: 400px;
-  padding-left: 20px;
+  padding-left: 30px;
   text-align: left;
+}
+
+.aspiration_bottom_right p {
+  margin-bottom : 0px;
+  padding: 10px 0px;
+}
+
+.aspiration_highlight {
+  color: #F6BB43;
 }
 
 
