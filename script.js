@@ -49,11 +49,9 @@ function saMouseenter() {
 const saEventHandler = {
   'Mouseenter': () => {
     saEnter.classList.remove(HIDDEN_CLASSNAME);
-    console.log("mouseenter");x
   },
   mouseleave: function saMouseLeave() {
     saEnter.classList.add(HIDDEN_CLASSNAME);
-    console.log("MouseLeaver");
   }
 };
 
@@ -61,7 +59,7 @@ function openSA() {
   console.log("click");
 }
 
-saEnter.classList.add(HIDDEN_CLASSNAME);
+// saEnter.classList.add(HIDDEN_CLASSNAME);
 teamPicture.addEventListener("mouseenter", saEventHandler.Mouseenter);
 teamPicture.addEventListener("mouseleave", saEventHandler.mouseleave);
 saEnter.addEventListener("click", openSA);

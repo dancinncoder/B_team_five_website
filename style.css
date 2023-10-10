@@ -10,28 +10,41 @@ body {
 /* / 도트 게임 스타일 폰트  */
 @font-face {
   font-family: "DungGeunMo";
-  src: url(/asset/font/DungGeunMo.woff);
-}
-@font-face {
-  font-family: pixel;
-  src: url(./fonts/pixelroborobo.otf);
+  src: url(./asset/font/DungGeunMo.woff);
 }
 
+
 body, h1, h2, p {
-  font-family: pixel;
+  font-family: "DungGeunMo";
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url("./gif/우주선.gif");
+  background-image: url("https://wallpaperaccess.com/full/2825704.gif");
   background-size: cover;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
 
+/* header */ 
+.mytitle {
+  margin-top: 30px;
+  height: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.mytitle > h1 {
+  font-size: 3.5rem;
+}
 
 /* asset 에 인물 사진 넣어놨습니다. */
 
@@ -54,12 +67,12 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  width: 800px;
+  width: 1100px;
   color: white;
 }
 
-.iconbox>h2 {
-  margin-top: 50px;
+.iconbox > h2 {
+  margin-top: 100px;
 }
 
 .iconcontent {
@@ -72,7 +85,7 @@ html, body {
 
 .iconcontent>p {
   margin: 5px 5px 5px 5px;
-  ;
+  font-size: 1.2rem;
 }
 
 .icons {
@@ -85,15 +98,22 @@ html, body {
   margin: 50px 10px 80px 10px;
 }
 
-.member_area {
+.icon_midbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: row;
   flex-wrap: wrap;
+}
+
+.member_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 400px;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -103,11 +123,16 @@ html, body {
   align-items: center;
   text-align: center;
   margin: 10px 20px 10px 20px;
+  border-radius: 20px;
 }
 
 .icon>p {
   font-size: 20px;
   margin-top: -2px;
+}
+
+.iconbox > h2 {
+  font-size: 2.5rem;
 }
 
 .member_btn {
@@ -145,7 +170,14 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  text-align: left;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.information_text > p {
+ margin: 0;
 }
 
 .information_box>img {
@@ -153,6 +185,21 @@ html, body {
   object-fit: cover;
   margin: 10px 10px 10px 10px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.member_btn > img:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  box-shadow: 0 0 15px rgb(54, 146, 222), 0 0 45px rgb(54, 146, 222),
+  0 0 75px rgb(54, 146, 222),0 0 150px rgb(54, 146, 222);
+}
+
 
 
 
@@ -290,8 +337,9 @@ html, body {
 .team_intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  scale: 80%;
   width: 1200px;
+  height: 500px;
   margin: 20px auto 20px auto;
 }
 
@@ -301,17 +349,18 @@ html, body {
 
 .intro_right {
   width: 700px;
+  /* padding-top: 15px; */
 }
 
 .team_picture {
   width: 400px;
   height: 420px;
   padding: 20px;
-  margin: 20px auto 20px auto;
+  margin: 50px;
   border-radius: 30px;
   box-shadow: 0 1px 10px rgb(0, 0, 0);
 
-  background-image: url("./asset/memeber_pic/teampicture.jpg");
+  background-image: url("./asset/memeber_pic/teampicture3.jpg");
   background-size: cover;
 
   display: flex;
@@ -324,7 +373,8 @@ html, body {
 }
 
 .team_picture:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgb(54, 146, 222), 0 0 45px rgb(54, 146, 222), 0 0 75px rgb(54, 146, 222),0 0 150px rgb(54, 146, 222);
 }
 
 .saEnter {
@@ -340,8 +390,7 @@ html, body {
   font-size: 25px;
   text-align: center;
   color: white;
-
-  /* display: flex; */
+    /* display: flex; */
 }
 
 .saEnter:active {
@@ -349,11 +398,11 @@ html, body {
 }
 
 .team_slogan {
-  background-color: #1C2028;
+  /* background-color: #1C2028; */
   width: 650px;
   height: 100px;
   padding: 20px;
-  margin: 20px auto 20px auto;
+  margin: auto;
   border-radius: 30px;
 
   display: flex;
@@ -367,14 +416,16 @@ html, body {
 
 .team_slogan h1 {
   font-size: 40px;
+  margin: 0px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .team_aspiration {
-  background-color: #5C5F65;
+  /* background-color: #5C5F65; */
   width: 650px;
   height: 300px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
+  padding: 0px 20px;
+  margin: auto;
   border-radius: 30px;
 
   /* display: flex;
@@ -388,8 +439,19 @@ html, body {
 }
 
 .aspiration_top {
-  color: #F6BB43;
+  /* color: #F6BB43; */
   font-size: 22px;
+}
+
+.aspiration_top p{
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.team_promise p {
+  color: #F6BB43;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .aspiration_bottom {
@@ -400,16 +462,32 @@ html, body {
 
   align-items: center;
   line-height: 60%;
+
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .aspiration_bottom_left h1 {
   font-size: 30px;
+  margin : 0px
 }
 
 .aspiration_bottom_right {
   width: 400px;
-  padding-left: 20px;
+  padding-left: 30px;
   text-align: left;
+}
+
+.aspiration_bottom_right p {
+  margin-bottom : 0px;
+  padding: 10px 0px;
+}
+
+.aspiration_highlight {
+  color: #F6BB43;
 }
 
 
@@ -424,10 +502,13 @@ html, body {
 .container-fluid .nav-item {
   font-size: 25px;
   align-items: right;
-  font-family: pixel;
+  font-family: "DungGeunMo";
 }
 .navbar-brand {
   font-size: 40px;
-  color: yellow;
-  font-family: pixel;
+  font-family: "DungGeunMo";
+}
+
+.navbar {
+  padding: 0;
 }

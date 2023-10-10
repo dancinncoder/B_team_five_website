@@ -8,11 +8,10 @@
   <script type="text/javascript" src="script.js"></script>
   <link href="/asset/memeber_pic/ico.png" rel="shortcut icon" type="image/x-icon">
 
+
   <!--CSS 연결-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <!--JavaScript 연결-->
-
   <!--jQuery 사용-->
 
 
@@ -21,8 +20,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
-
-
 </head>
 
 <body>
@@ -60,11 +57,14 @@
 
   <div class="team_intro" id="teamintro">
     <div class="intro_left">
-      <div class="team_picture">
-        <button class="saEnter" type="button"
-          onclick="window.open('https://teamsparta.notion.site/B-5-5-S-A-993034de600a4ebcb72004b7ecf38552')">SA 보고
-          5조</button>
-      </div>
+      <label>
+        <div class="team_picture">
+          <button class="saEnter hidden" type="button"
+            onclick="window.open('https://teamsparta.notion.site/B-5-5-S-A-993034de600a4ebcb72004b7ecf38552')">
+            SA 보고 5조
+          </button>
+        </div>
+      </label>
     </div>
     <div class="intro_right">
       <div class="team_slogan">
@@ -72,8 +72,11 @@
       </div>
       <div class="team_aspiration">
         <div class="aspiration_top">
-          <p>코딩에 처음 입문하는 5명이 모여서<br>
+          <p>코딩에 처음 입문하는 4명이 모여서<br>
             끌어주고 당겨주며 다같이 성장하는 5조입니다.</p>
+        </div>
+        <div class="team_promise">
+          <p>팀 약속 : 웃으면서 코딩하자!</p>
         </div>
         <div class="aspiration_bottom">
           <div class="aspiration_bottom_left">
@@ -81,11 +84,10 @@
               Aspiration</h1>
           </div>
           <div class="aspiration_bottom_right">
-            <p>Aspiration1---</p>
-            <p>Aspiration2-------</p>
-            <p>Aspiration3-----------</p>
-            <p>Aspiration4-------------------</p>
-            <p>Aspiration5---------------------------</p>
+            <p><span class="aspiration_highlight">하민</span> 문제 해결 왕이 될 거야!</p>
+            <p><span class="aspiration_highlight">창근</span> 어제보다 오늘 더 성장하자!</p>
+            <p><span class="aspiration_highlight">준호</span> 묵묵히 버티기</p>
+            <p><span class="aspiration_highlight">지훈</span> 연봉 5조 가즈아!!</p>
           </div>
         </div>
       </div>
@@ -101,27 +103,68 @@
         <p>각 인원들의 능력을 파악하고 효과적으로 사용하여 프로젝트에 성공하세요!</p>
       </div>
       <div class="icons">
-        <div class="member_area">
-          <div class="icon">
-            <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg"
-                onclick="memberToggle1()"></button>
-            <p>이하민</p>
+        <div class="icon_midbox">
+          <div class="member_area">
+            <div class="icon">
+              <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg"
+                  onclick="memberToggle1()"></button>
+              <p>이하민</p>
+            </div>
+            <div class="icon">
+              <button type="button" class="member_btn" id="member_btn" onclick="
+              memberToggle2()"><img src="./asset/memeber_pic/ai_창근.jpg"></button>
+              <p>윤창근</p>
+            </div>
+            <div class="icon">
+              <button type="button" class="member_btn" id="member_btn" onclick="
+              memberToggle3()"><img src="./asset/memeber_pic/ai_준호.jpg"></button>
+              <p>서준호</p>
+            </div>
+            <div class="icon">
+              <button type="button" class="member_btn" id="member_btn" onclick="
+              memberToggle5()"><img src="./asset/memeber_pic/ai_지훈.jpg"></button>
+              <p>서지훈</p>
+            </div>
           </div>
-          <div class="icon">
-            <button type="button" class="member_btn" id="member_btn" onclick="
-            memberToggle2()"><img src="./asset/memeber_pic/ai_창근.jpg"></button>
-            <p>윤창근</p>
+          <div class="information_box" id="informationBox_하민">
+            <img src="./asset/memeber_pic/하민_removebg.png">
+            <h3>이하민(Lead)</h3>
+            <div class="information_text">
+              <p>MBTI : ISFJ</p>
+              <p>좋아하는 것들 : 음악, 영화, 춤</p>
+              <p>취미 : 음악듣기, 영화보기, 춤추기</p>
+              <p>장점 : 계획적이다, 책임감이 있다</p>
+              <p>협업 스타일 : 전체계획 후, 우선순위순으로 작업</p>
+              <p>Blog : <a href="https://whereannalee.tistory.com/"
+                target="_blank">블로그 보기</a></p>
+            </div>
           </div>
-          <div class="icon">
-            <button type="button" class="member_btn" id="member_btn" onclick="
-            memberToggle3()"><img src="./asset/memeber_pic/ai_준호.jpg"></button>
-            <p>서준호</p>
+          <div class="information_box" id="informationBox_창근">
+            <img src="./asset/memeber_pic/창근_removebg.png">
+            <h3>윤창근</h3>
+            <div class="information_text">
+              <p>MBTI : INTJ</p>
+              <p>좋아하는 것들 : 유튜브, 파란색</p>
+              <p>취미 : 영화, 야구, 여행</p>
+              <p>장점 : 창의적이다, 디테일하다</p>
+              <p>협업 스타일 : 전체적인 업무체크 후 작업</p>
+              <p>Blog : <a href="https://y-developer.tistory.com/" target="_blank">블로그 보기</a>
+              </p>
+            </div>
           </div>
-          <div class="icon">
-            <button type="button" class="member_btn" id="member_btn" onclick="
-            memberToggle4()"><img src="./asset/memeber_pic/ai_태용.jpg"></button>
-            <p>심태용</p>
+          <div class="information_box" id="informationBox_준호">
+            <img height="230px" src="./asset/memeber_pic/준호_removebg.png">
+            <h3>서준호</h3>
+            <div class="information_text">
+              <p>MBTI : ISTP</p>
+              <p>좋아하는 것들 : 게임 ,만화,드라마 </p>
+              <p>취미 : 운동,그림</p>
+              <p>장점 : 잘 웃는다.</p>
+              <p>협업 스타일 : 업무 우선순위 결정 후 작업</p>
+              <p>Blog : <a href="https://velog.io/@wnsgh2098" target="_blank">블로그 보기</a></p>
+            </div>
           </div>
+
           <div class="icon">
             <button type="button" class="member_btn" id="member_btn" onclick="
             memberToggle5()"><img src="./asset/memeber_pic/ai_지훈.jpg"></button>
@@ -168,20 +211,32 @@
             <p>장점 : </p>
           </div>
         </div>
-        <div class="information_box" id="informationBox_지훈">
-          <img src="./asset/memeber_pic/지훈_removebg.png">
-          <h3>서지훈</h3>
-          <div class="information_text">
-            <p>MBTI : ISFJ</p>
-            <p>좋아하는 것들 :동물(강아지, 고양이) </p>
-            <p>취미 : 운동, 음악듣기, 게임</p>
-            <p>장점 : 끈기, 꼼꼼함</p>
+
+          <div class="information_box" id="informationBox_지훈">
+            <img src="./asset/memeber_pic/지훈_removebg.png">
+            <h3>서지훈</h3>
+            <div class="information_text">
+              <p>MBTI : ISFJ</p>
+              <p>좋아하는 것들 : 강아지, 고양이</p>
+              <p>취미 : 운동, 음악듣기, 게임</p>
+              <p>장점 : 끈기, 꼼꼼함</p>
+              <p>협업 스타일 : 서로 스타일 등을 파악 후 작업</p>
+              <p>Blog : <a href="https://jihune6439.tistory.com" target="_blank">블로그 보기</a></p>
+            </div>
+
           </div>
         </div>
       </div>
 
+
+
+
+
     </div>
+
   </div>
+
+
   <!--준호님-->
   <div class="guest_book">
 
@@ -189,8 +244,9 @@
     <div class="commentbox nesfont">
       <div class=" neon">
         <h1>Teme.다같이 배우고 5조 방명록</h1>
-      </div>
+
       <form class="commentfrom neon">
+
         <div class="mb-3">
           <input type="text" class="form-control" id="nickname" placeholder="닉네임을 적어주세요!">
           <div class="warning1">
@@ -208,9 +264,11 @@
       <div class="list-box">
         <ul class="list mt-3 p-0 neon"></ul>
       </div>
-    </div>
-    <footer>
-    </footer>
+
+
+
+
+
 </body>
 <script type="module">
   // Firebase SDK 라이브러리 가져오기
@@ -307,5 +365,10 @@ $(".list-group-item #removeBtn").click((button) => {
   
 
 </script>
-
+</div>
+<footer>
+</footer>
+<!--JavaScript 연결-->
+<!-- JS code 작동을 안해서 맨 밑으로 위치 변경 -->
+<script type="text/javascript" src="script.js"></script>
 </html>
