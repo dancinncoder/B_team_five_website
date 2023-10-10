@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B_team_five_website</title>
+  <link href="/asset/memeber_pic/ico.png" rel="shortcut icon" type="image/x-icon">
+
+  <!--jQuery 사용-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>다같이 배우고 5조</title>
+
+  <!--Bootstrap사용-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
   <!--CSS 연결-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <!--jQuery 사용-->
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <title>다같이 배우고 5조</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -33,10 +36,10 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#teamintro">팀 루틴</a>
+            <a class="nav-link" href="#teamintro">팀루틴</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#teamintroduce">팀원 소개</a>
+            <a class="nav-link" href="#teamintroduce">팀원소개</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#comment">방명록</a>
@@ -49,10 +52,8 @@
     <div class="mytitle">
       <h1>다같이 배우고 5조</h1>
       <h2>#B팀 5조</h2>
-
     </div>
   </header>
-
   <div class="team_intro" id="teamintro">
     <div class="intro_left">
       <label>
@@ -91,7 +92,6 @@
       </div>
     </div>
   </div>
-
   <div class="member_intro" id="teamintroduce">
     <div class="iconbox">
       <h2>개성 넘치는 5조!</h2>
@@ -103,28 +103,28 @@
         <div class="icon_midbox">
           <div class="member_area">
             <div class="icon">
-              <button type="button" class="member_btn" id="member_btn"><img src="./asset/memeber_pic/ai_하민.jpg"
+              <button type="button" class="member_btn" id="member_btn"><img alt="이하민ai사진" src="./asset/memeber_pic/ai_하민.jpg"
                   onclick="memberToggle1()"></button>
               <p>이하민</p>
             </div>
             <div class="icon">
               <button type="button" class="member_btn" id="member_btn" onclick="
-              memberToggle2()"><img src="./asset/memeber_pic/ai_창근.jpg"></button>
+              memberToggle2()"><img alt="윤창근ai사진"src="./asset/memeber_pic/ai_창근.jpg"></button>
               <p>윤창근</p>
             </div>
             <div class="icon">
               <button type="button" class="member_btn" id="member_btn" onclick="
-              memberToggle3()"><img src="./asset/memeber_pic/ai_준호.jpg"></button>
+              memberToggle3()"><img alt="서준호ai사진" src="./asset/memeber_pic/ai_준호.jpg"></button>
               <p>서준호</p>
             </div>
             <div class="icon">
               <button type="button" class="member_btn" id="member_btn" onclick="
-              memberToggle5()"><img src="./asset/memeber_pic/ai_지훈.jpg"></button>
+              memberToggle5()"><img  alt="서지훈ai사진" src="./asset/memeber_pic/ai_지훈.jpg"></button>
               <p>서지훈</p>
             </div>
           </div>
           <div class="information_box" id="informationBox_하민">
-            <img src="./asset/memeber_pic/하민_removebg.png">
+            <img alt="이하민사진" src="./asset/memeber_pic/하민_removebg.png">
             <h3>이하민(Lead)</h3>
             <div class="information_text">
               <p>MBTI : ISFJ</p>
@@ -132,12 +132,11 @@
               <p>취미 : 음악듣기, 영화보기, 춤추기</p>
               <p>장점 : 계획적이다, 책임감이 있다</p>
               <p>협업 스타일 : 전체계획 후, 우선순위순으로 작업</p>
-              <p>Blog : <a href="https://whereannalee.tistory.com/"
-                target="_blank">블로그 보기</a></p>
+              <p>Blog : <a href="https://whereannalee.tistory.com/" target="_blank">블로그 보기</a></p>
             </div>
           </div>
           <div class="information_box" id="informationBox_창근">
-            <img src="./asset/memeber_pic/창근_removebg.png">
+            <img alt="윤창근사진" src="./asset/memeber_pic/창근_removebg.png">
             <h3>윤창근</h3>
             <div class="information_text">
               <p>MBTI : INTJ</p>
@@ -150,19 +149,19 @@
             </div>
           </div>
           <div class="information_box" id="informationBox_준호">
-            <img height="230px" src="./asset/memeber_pic/준호_removebg.png">
+            <img alt="서준호사진" src="./asset/memeber_pic/준호_removebg.png">
             <h3>서준호</h3>
             <div class="information_text">
               <p>MBTI : ISTP</p>
               <p>좋아하는 것들 : 게임 ,만화,드라마 </p>
               <p>취미 : 운동,그림</p>
-              <p>장점 : 잘 웃는다.</p>
+              <p>장점 : 잘 웃는다</p>
               <p>협업 스타일 : 업무 우선순위 결정 후 작업</p>
               <p>Blog : <a href="https://velog.io/@wnsgh2098" target="_blank">블로그 보기</a></p>
             </div>
           </div>
           <div class="information_box" id="informationBox_지훈">
-            <img src="./asset/memeber_pic/지훈_removebg.png">
+            <img alt="서지훈사진" src="./asset/memeber_pic/지훈_removebg.png">
             <h3>서지훈</h3>
             <div class="information_text">
               <p>MBTI : ISFJ</p>
@@ -175,70 +174,131 @@
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
-
   </div>
-  
-  <!--준호님-->
   <div class="guest_book">
-
-
     <div class="commentbox nesfont">
       <div class=" neon">
-        <h1>Teme.다같이 배우고 5조 방명록</h1>
-      </div>
-      <form class="commentfrom  neon">
-
-        <div class="mb-3">
-          <input type="text" class="form-control " id="nickname" placeholder="닉네임을 적어주세요!">
-          <div class="warning1">
-            <strong> 1글자 이상 적어주세요!! </strong>
-          </div>
-        </div>
-        <div class="mb-3">
-          <input type="text" class="form-control" id="comment" placeholder="힘이나는 응원의 한마디!">
-          <div class="warning2">
-            3글자 이상 적어주세요!!
-          </div>
-        </div>
-        <button onclick="makebox()" class="make btn  " type="button">방명록 등록!</button>
-      </form>
-    </div>
-
-
-    <div class="commentbox nesfont neon ">
-      <div id="newcommnet ">
-        <div class="list-group-item  d-flex gap-3 py-3  neon " aria-current="true">
-          <img
-            src="https://cdn.icon-icons.com/icons2/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png"
-            alt="프로필아이콘" width="36" height="36" class="rounded-circle flex-shrink-0">
-          <div class="d-flex gap-2 w-100 justify-content-between">
-            <div>
-              <h4 class="mb-0">5조 화이팅!</h4>
-              <p class="mb-0 opacity-75"> 같이 힘내봐요!!</p>
+        <h1>다같이 배우고 5조 방명록</h1>
+        <form class="commentfrom neon">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="nickname" placeholder="닉네임을 적어주세요!">
+            <div class="warning1">
+              <strong> 1글자 이상 적어주세요!! </strong>
             </div>
-            <small class="opacity-50 text-nowrap">now</small>
           </div>
-          <button type="button" onclick="removebtn(this)" id="removebtn" class="btn-close " aria-label="Close"></button>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="comment" placeholder="힘이나는 응원의 한마디!">
+            <div class="warning2">
+              3글자 이상 적어주세요!!
+            </div>
+          </div>
+          <button id="postingBtn" class="make btn" type="button">방명록 등록!</button>
+        </form>
+        <div class="list-box">
+          <ul class="list mt-3 p-0 neon"></ul>
         </div>
-
-
-
-
       </div>
-
-
     </div>
-    <footer>
-    </footer>
-    <!--JavaScript 연결-->
-    <!-- JS code 작동을 안해서 맨 밑으로 위치 변경 -->
-    <script type="text/javascript" src="script.js"></script>
+  </div>
 </body>
+<script type="module">
+  // Firebase SDK 라이브러리 가져오기
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+  import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+  import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCJfp-HkLbo96_nrh8NN9y-o_BDeFRy4fA",
+    authDomain: "website-6fb45.firebaseapp.com",
+    projectId: "website-6fb45",
+    storageBucket: "website-6fb45.appspot.com",
+    messagingSenderId: "995582214512",
+    appId: "1:995582214512:web:e8ba24e0c4ca4ffb948fb5"
+  };
+
+
+  // Firebase 인스턴스 초기화
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+
+  $(document).ready(async () => {
+    await getCommentList();
+    await initEvents();
+  });
+
+
+  const getCommentList = async () => {
+    const commentDB = await getDocs(collection(db, "방문자코멘트"));
+    commentDB.forEach((item) => {
+      makeCommentItem(item.data())
+    })
+  }
+
+
+  const makeCommentItem = (item) => {
+    const listItem = `
+      <li class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="./asset/memeber_pic/comment.png" alt="twbs" width="36" height="36" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between ">
+            <h4 class="mb-0">${item.nickname}</h4>
+            <p class="mb-0 opacity-75"> ${item.comment}</p>
+            <small class="opacity-50 text-nowrap">${item.created_at}</small>
+          </div>
+          <button type="button" id="removeBtn" name="removeBtn" class="btn-close " aria-label="Close"></button>
+      </li>`;
+    $('.list-box .list').append(listItem);
+  }
+
+
+  const initEvents = () => {
+    const setComment = async (nickname, comment) => {
+      const date = new Date();
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      const createdAt = year + '.' + month + '.' + day;
+      const newComment = { 'nickname': nickname, 'comment': comment, 'created_at': createdAt };
+      await addDoc(collection(db, "방문자코멘트"), newComment);
+      await makeCommentItem(newComment);
+    }
+
+
+    $("#postingBtn").click(() => {
+      let test = 1;
+      let nickname = $('#nickname').val()
+      if (nickname.length < 1) {
+        $('.warning1').css('display', 'block');
+        $('.warning2').css('display', 'none');   // 코멘트 관련 경고 숨김
+        return;
+      } else {
+        $('.warning1').css('display', 'none');  // 닉네임 관련 경고 숨김
+      }
+      let comment = $('#comment').val();
+      if (comment.length < 3) {
+        $('.warning2').css('display', 'block');
+        $('.warning1').css('display', 'none'); // 닉네임 관련 경고 숨김
+        return;
+      } else {
+        $('.warning2').css('display', 'none'); // 코멘트 관련 경고 숨김
+      }
+
+      setComment(nickname, comment);
+    });
+
+    // 방명록 삭제 코드 //
+    $(".list-group-item #removeBtn").click((button) => {
+      button.target.closest('.list-group-item').remove();
+    })
+
+  }
+</script>
+
+<!--JavaScript 연결-->
+<!-- JS code 작동을 안해서 맨 밑으로 위치 변경 -->
+<script type="text/javascript" src="script.js"></script>
 
 </html>
